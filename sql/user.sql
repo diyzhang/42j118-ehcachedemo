@@ -14,7 +14,9 @@
  Date: 04/08/2020 18:27:39
 */
 
-SET NAMES utf8mb4;
+CREATE DATABASE IF NOT EXISTS `user` DEFAULT CHARACTER SET = utf8mb4;
+Use `user`;
+
 SET FOREIGN_KEY_CHECKS = 0;
 
 -- ----------------------------
@@ -35,6 +37,6 @@ CREATE TABLE `user`  (
 INSERT INTO `user` VALUES (1, '李明', '男', '北京');
 INSERT INTO `user` VALUES (2, '王刚', '男', '上海');
 INSERT INTO `user` VALUES (3, '张磊', '男', '广州');
-INSERT INTO `user` VALUES (57, 'Tom', 'man', 'New York, America');
+INSERT INTO `user` VALUES (57, 'Tom1', 'man', 'New York, America');
 
 SET FOREIGN_KEY_CHECKS = 1;
